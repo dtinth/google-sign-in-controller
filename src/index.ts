@@ -51,6 +51,8 @@ export class GoogleSignInController {
       this.currentUser = user
       this.currentUserChangedCallbacks.forEach((callback) => callback())
     })
+    this.currentUser = authInstance.currentUser.get()
+    this.currentUserChangedCallbacks.forEach((callback) => callback())
 
     return gapi
   })
@@ -88,11 +90,16 @@ export class GoogleSignInController {
 
   /**
    * Returns a simplified version of the current user.
-   * @returns - The current user information, or null if the user is not signed in.
+   * @returns - The current user information,
+   *  or null if the user is not signed in,
+   *  or undefined if the state is not known.
    */
-  getUserInfo(): UserInfo | null {
+  getUserInfo(): UserInfo | null | undefined {
     const { currentUser } = this
-    if (!currentUser || !currentUser.isSignedIn()) {
+    if (!currentUser) {
+      return undefined
+    }
+    if (!currentUser.isSignedIn()) {
       return null
     }
     return {
