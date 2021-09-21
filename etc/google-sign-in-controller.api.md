@@ -12,7 +12,7 @@ export class GoogleSignInController {
     // (undocumented)
     clientId: string;
     currentUser: gapi.auth2.GoogleUser | undefined;
-    getUserInfo(): UserInfo | null;
+    getUserInfo(): UserInfo | null | undefined;
     onCurrentUserChanged(callback: () => void): () => void;
     signIn(): Promise<gapi.auth2.GoogleUser>;
     signOut(): Promise<any>;

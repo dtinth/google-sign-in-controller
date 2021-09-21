@@ -1,0 +1,5 @@
+name: google-sign-in-controller
+version: master
+title: '@dtinth/google-sign-in-controller'
+nav:
+  - modules/ROOT/nav.adoc

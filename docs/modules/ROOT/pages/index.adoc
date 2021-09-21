@@ -1,0 +1,13 @@
+= @dtinth/google-sign-in-controller
+:experimental:
+
+== Set up
+
+To create an https://console.cloud.google.com/apis/credentials[OAuth 2.0 Client ID]:
+
+. Click on menu:Create Credentials[OAuth Client ID].
+. Select menu:Application type[Web application].
+. Enter a name for the application.
+. In the Authorized JavaScript origins field, add an origin.
+. Click btn:[Create]
+. Note the Client ID.
