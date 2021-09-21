@@ -4,30 +4,25 @@
 
 ```ts
 
-/// <reference types="gapi" />
 /// <reference types="gapi.auth2" />
 
-// @public (undocumented)
+// @public
 export class GoogleSignInController {
     constructor(clientId: string);
     // (undocumented)
     clientId: string;
-    // (undocumented)
     currentUser: gapi.auth2.GoogleUser | undefined;
-    // (undocumented)
-    ensureGapiInitialized: () => Promise<typeof gapi>;
-    // (undocumented)
-    getUserInfo(): {
-        name: string;
-        email: string;
-        idToken: string;
-    } | null;
-    // (undocumented)
+    getUserInfo(): UserInfo | null;
     onCurrentUserChanged(callback: () => void): () => void;
-    // (undocumented)
     signIn(): Promise<gapi.auth2.GoogleUser>;
-    // (undocumented)
     signOut(): Promise<any>;
+}
+
+// @public
+export interface UserInfo {
+    email: string;
+    idToken: string;
+    name: string;
 }
 
 // (No @packageDocumentation comment for this package)
