@@ -1,9 +1,10 @@
 {
   "name": "@dtinth/google-sign-in-controller",
-  "version": "0.0.1",
+  "version": "0.0.1-0",
   "description": "Simple library to a client sign in with Google",
-  "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "main": "./lib-commonjs/index.js",
+  "module": "./lib/index.js",
+  "types": "./dist/google-sign-in-controller.d.ts",
   "files": [
     "src",
     "lib",
@@ -12,15 +13,19 @@
   ],
   "scripts": {
     "build": "heft build",
-    "test": "heft test"
+    "test": "heft test",
+    "prepare": "heft build"
   },
   "author": "Thai Pangsakulyanont <dtinth@spacet.me> (http://dt.in.th/)",
   "license": "MIT",
   "devDependencies": {
-    "@rushstack/heft-web-rig": "^0.4.13",
     "@rushstack/heft": "^0.38.1",
+    "@rushstack/heft-web-rig": "^0.4.13",
     "@types/heft-jest": "1.0.2"
   },
   "dependencies": {
+    "@types/gapi": "^0.0.41",
+    "@types/gapi.auth2": "^0.0.55",
+    "p-memoize": "^5.0.0"
   }
 }

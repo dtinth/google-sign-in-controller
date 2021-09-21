@@ -2,3 +2,4 @@
 /lib-commonjs/
 /dist/
 node_modules
+.heft

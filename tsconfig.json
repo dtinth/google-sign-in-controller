@@ -4,6 +4,8 @@
     "skipLibCheck": true,
     "types": [
       "heft-jest",
+      "gapi",
+      "gapi.auth2",
       "node"
     ]
   }
