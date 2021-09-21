@@ -3,3 +3,4 @@ version: master
 title: '@dtinth/google-sign-in-controller'
 nav:
   - modules/ROOT/nav.adoc
+  - modules/api/nav.adoc

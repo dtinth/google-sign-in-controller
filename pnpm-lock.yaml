@@ -1,11 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@microsoft/api-documenter': ^7.13.50
   '@rushstack/heft': ^0.38.1
   '@rushstack/heft-web-rig': ^0.4.13
   '@types/gapi': ^0.0.41
   '@types/gapi.auth2': ^0.0.55
   '@types/heft-jest': 1.0.2
+  api-documenter-yaml-to-antora-asciidoc: ^0.0.0-7
   p-memoize: ^5.0.0
 
 dependencies:
@@ -14,9 +16,11 @@ dependencies:
   p-memoize: 5.0.0
 
 devDependencies:
+  '@microsoft/api-documenter': 7.13.50
   '@rushstack/heft': 0.38.1
   '@rushstack/heft-web-rig': 0.4.13_@rushstack+heft@0.38.1
   '@types/heft-jest': 1.0.2
+  api-documenter-yaml-to-antora-asciidoc: 0.0.0-7
 
 packages:
 
@@ -618,6 +622,19 @@ packages:
       '@types/node': 16.9.4
       '@types/yargs': 16.0.4
       chalk: 4.1.2
+    dev: true
+
+  /@microsoft/api-documenter/7.13.50:
+    resolution: {integrity: sha512-u2VWomC4x1OFHNA+6VTKwfupD9ZOCR3V6ql7rieYmfVNMm+4V1UB1RSdzDDp1SQlTt13fwPUhO4yiAGRwmJdRA==}
+    hasBin: true
+    dependencies:
+      '@microsoft/api-extractor-model': 7.13.7
+      '@microsoft/tsdoc': 0.13.2
+      '@rushstack/node-core-library': 3.40.2
+      '@rushstack/ts-command-line': 4.9.0
+      colors: 1.2.5
+      js-yaml: 3.13.1
+      resolve: 1.17.0
     dev: true
 
   /@microsoft/api-extractor-model/7.13.7:
@@ -1261,6 +1278,17 @@ packages:
       picomatch: 2.3.0
     dev: true
 
+  /api-documenter-yaml-to-antora-asciidoc/0.0.0-7:
+    resolution: {integrity: sha512-rkJRFJfd2F9Z7BzWzI1J2ytYVOCkbF2E1r5cksGnms2O6qov0v3AJSYF8NZCWgA7JVRt4n5KfAU+Pn4hTXxjYw==}
+    hasBin: true
+    dependencies:
+      '@rushstack/ts-command-line': 4.9.0
+      glob: 7.1.7
+      js-yaml: 4.1.0
+      make-promises-safe: 5.1.0
+      mkdirp: 1.0.4
+    dev: true
+
   /aproba/1.2.0:
     resolution: {integrity: sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==}
     dev: true
@@ -1276,6 +1304,10 @@ packages:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
       sprintf-js: 1.0.3
+    dev: true
+
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
   /arr-diff/4.0.0:
@@ -4374,12 +4406,27 @@ packages:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
 
+  /js-yaml/3.13.1:
+    resolution: {integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==}
+    hasBin: true
+    dependencies:
+      argparse: 1.0.10
+      esprima: 4.0.1
+    dev: true
+
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
+    dev: true
+
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
     dev: true
 
   /jsbn/0.1.1:
@@ -4670,6 +4717,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       semver: 6.3.0
+    dev: true
+
+  /make-promises-safe/5.1.0:
+    resolution: {integrity: sha512-AfdZ49rtyhQR/6cqVKGoH7y4ql7XkS5HJI1lZm0/5N6CQosy1eYbBJ/qbhkKHzo17UH7M918Bysf6XB9f3kS1g==}
     dev: true
 
   /makeerror/1.0.11:

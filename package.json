@@ -14,14 +14,17 @@
   "scripts": {
     "build": "heft build",
     "test": "heft test",
-    "prepare": "heft build"
+    "prepare": "heft build",
+    "api": "api-documenter yaml -i temp -o temp/api-yaml && api-documenter-yaml-to-antora-asciidoc asciidoc -i temp/api-yaml"
   },
   "author": "Thai Pangsakulyanont <dtinth@spacet.me> (http://dt.in.th/)",
   "license": "MIT",
   "devDependencies": {
+    "@microsoft/api-documenter": "^7.13.50",
     "@rushstack/heft": "^0.38.1",
     "@rushstack/heft-web-rig": "^0.4.13",
-    "@types/heft-jest": "1.0.2"
+    "@types/heft-jest": "1.0.2",
+    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-7"
   },
   "dependencies": {
     "@types/gapi": "^0.0.41",

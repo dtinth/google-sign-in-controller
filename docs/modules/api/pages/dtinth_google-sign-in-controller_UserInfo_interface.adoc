@@ -1,0 +1,51 @@
+= interface UserInfo
+
+The user information.
+
+== Properties
+
+[id="dtinth_google-sign-in-controller_UserInfo_email_member"]
+=== email
+
+========
+
+Email address of the user.
+
+
+.Signature
+[source,typescript]
+----
+email: string;
+----
+
+========
+[id="dtinth_google-sign-in-controller_UserInfo_idToken_member"]
+=== idToken
+
+========
+
+The ID token of the user.
+
+
+.Signature
+[source,typescript]
+----
+idToken: string;
+----
+
+========
+[id="dtinth_google-sign-in-controller_UserInfo_name_member"]
+=== name
+
+========
+
+Full name of the user.
+
+
+.Signature
+[source,typescript]
+----
+name: string;
+----
+
+========

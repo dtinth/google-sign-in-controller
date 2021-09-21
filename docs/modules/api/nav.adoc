@@ -1,0 +1,4 @@
+.API documentation
+* xref:dtinth_google-sign-in-controller.adoc[@dtinth/google-sign-in-controller]
+** xref:dtinth_google-sign-in-controller_GoogleSignInController_class.adoc[GoogleSignInController]
+** xref:dtinth_google-sign-in-controller_UserInfo_interface.adoc[UserInfo]

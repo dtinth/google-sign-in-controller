@@ -1,0 +1,139 @@
+= class GoogleSignInController
+
+Loads the Google APIs client library and provides a simple interface to Google Sign-In.
+
+== Properties
+
+[id="dtinth_google-sign-in-controller_GoogleSignInController_clientId_member"]
+=== clientId
+
+========
+
+
+
+
+.Signature
+[source,typescript]
+----
+clientId: string;
+----
+
+========
+[id="dtinth_google-sign-in-controller_GoogleSignInController_currentUser_member"]
+=== currentUser
+
+========
+
+The current user.
+
+
+.Signature
+[source,typescript]
+----
+currentUser: gapi.auth2.GoogleUser | undefined;
+----
+
+========
+
+== Constructors
+
+[id="dtinth_google-sign-in-controller_GoogleSignInController_constructor_1"]
+=== (constructor)(clientId)
+
+========
+
+Initializes the GoogleSignInController.
+
+.Parameters
+[%header,cols="2,3,4",caption=""]
+|===
+|Name |Type |Description
+
+m|clientId
+m|string
+|The client ID of the application that is requesting authorization.
+|===
+
+.Signature
+[source,typescript]
+----
+constructor(clientId: string);
+----
+
+========
+
+== Methods
+
+[id="dtinth_google-sign-in-controller_GoogleSignInController_getUserInfo_member_1"]
+=== getUserInfo()
+
+========
+
+Returns a simplified version of the current user.
+
+
+.Signature
+[source,typescript]
+----
+getUserInfo(): UserInfo | null | undefined;
+----
+
+========
+[id="dtinth_google-sign-in-controller_GoogleSignInController_onCurrentUserChanged_member_1"]
+=== onCurrentUserChanged(callback)
+
+========
+
+Registers a callback to be called when the current user changes.
+
+.Parameters
+[%header%footer,cols="2,3,4",caption=""]
+|===
+|Name |Type |Description
+
+m|callback
+m|() =&gt; void
+|The callback to be called.
+
+s|Returns
+m|() =&gt; void
+|A function that unregisters the callback.
+|===
+
+.Signature
+[source,typescript]
+----
+onCurrentUserChanged(callback: () => void): () => void;
+----
+
+========
+[id="dtinth_google-sign-in-controller_GoogleSignInController_signIn_member_1"]
+=== signIn()
+
+========
+
+Sign in.
+
+
+.Signature
+[source,typescript]
+----
+signIn(): Promise<gapi.auth2.GoogleUser>;
+----
+
+========
+[id="dtinth_google-sign-in-controller_GoogleSignInController_signOut_member_1"]
+=== signOut()
+
+========
+
+Sign out.
+
+
+.Signature
+[source,typescript]
+----
+signOut(): Promise<any>;
+----
+
+========

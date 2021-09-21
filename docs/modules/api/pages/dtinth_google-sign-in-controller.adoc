@@ -1,0 +1,11 @@
+= package @dtinth/google-sign-in-controller
+
+
+
+== Classes
+
+* xref:dtinth_google-sign-in-controller_GoogleSignInController_class.adoc[GoogleSignInController]
+
+== Interfaces
+
+* xref:dtinth_google-sign-in-controller_UserInfo_interface.adoc[UserInfo]
