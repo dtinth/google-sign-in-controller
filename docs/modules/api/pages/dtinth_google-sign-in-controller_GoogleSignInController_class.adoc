@@ -2,12 +2,16 @@
 
 Loads the Google APIs client library and provides a simple interface to Google Sign-In.
 
+
+
 == Properties
 
 [id="dtinth_google-sign-in-controller_GoogleSignInController_clientId_member"]
 === clientId
 
 ========
+
+
 
 
 
@@ -27,6 +31,8 @@ clientId: string;
 The current user.
 
 
+
+
 .Signature
 [source,typescript]
 ----
@@ -43,6 +49,8 @@ currentUser: gapi.auth2.GoogleUser | undefined;
 ========
 
 Initializes the GoogleSignInController.
+
+
 
 .Parameters
 [%header,cols="2,3,4",caption=""]
@@ -72,6 +80,8 @@ constructor(clientId: string);
 Returns a simplified version of the current user.
 
 
+
+
 .Signature
 [source,typescript]
 ----
@@ -85,6 +95,8 @@ getUserInfo(): UserInfo | null | undefined;
 ========
 
 Registers a callback to be called when the current user changes.
+
+
 
 .Parameters
 [%header%footer,cols="2,3,4",caption=""]
@@ -115,6 +127,8 @@ onCurrentUserChanged(callback: () => void): () => void;
 Sign in.
 
 
+
+
 .Signature
 [source,typescript]
 ----
@@ -128,6 +142,8 @@ signIn(): Promise<gapi.auth2.GoogleUser>;
 ========
 
 Sign out.
+
+
 
 
 .Signature

@@ -2,6 +2,8 @@
 
 The user information.
 
+
+
 == Properties
 
 [id="dtinth_google-sign-in-controller_UserInfo_email_member"]
@@ -10,6 +12,8 @@ The user information.
 ========
 
 Email address of the user.
+
+
 
 
 .Signature
@@ -27,6 +31,8 @@ email: string;
 The ID token of the user.
 
 
+
+
 .Signature
 [source,typescript]
 ----
@@ -40,6 +46,8 @@ idToken: string;
 ========
 
 Full name of the user.
+
+
 
 
 .Signature
