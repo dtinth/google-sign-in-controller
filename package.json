@@ -24,7 +24,7 @@
     "@rushstack/heft": "^0.38.1",
     "@rushstack/heft-web-rig": "^0.4.13",
     "@types/heft-jest": "1.0.2",
-    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-7"
+    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-9"
   },
   "dependencies": {
     "@types/gapi": "^0.0.41",

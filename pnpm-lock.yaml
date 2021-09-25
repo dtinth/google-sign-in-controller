@@ -7,7 +7,7 @@ specifiers:
   '@types/gapi': ^0.0.41
   '@types/gapi.auth2': ^0.0.55
   '@types/heft-jest': 1.0.2
-  api-documenter-yaml-to-antora-asciidoc: ^0.0.0-7
+  api-documenter-yaml-to-antora-asciidoc: ^0.0.0-9
   p-memoize: ^5.0.0
 
 dependencies:
@@ -20,7 +20,7 @@ devDependencies:
   '@rushstack/heft': 0.38.1
   '@rushstack/heft-web-rig': 0.4.13_@rushstack+heft@0.38.1
   '@types/heft-jest': 1.0.2
-  api-documenter-yaml-to-antora-asciidoc: 0.0.0-7
+  api-documenter-yaml-to-antora-asciidoc: 0.0.0-9
 
 packages:
 
@@ -1278,8 +1278,8 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /api-documenter-yaml-to-antora-asciidoc/0.0.0-7:
-    resolution: {integrity: sha512-rkJRFJfd2F9Z7BzWzI1J2ytYVOCkbF2E1r5cksGnms2O6qov0v3AJSYF8NZCWgA7JVRt4n5KfAU+Pn4hTXxjYw==}
+  /api-documenter-yaml-to-antora-asciidoc/0.0.0-9:
+    resolution: {integrity: sha512-ISIg5srwAmmiBtZpjKBm7e3DQjIFV4VyyKBovpCqiQxQYn37H3/WzrzfPArmBjqm3RdKwDif9VcB2EEn0g08Lg==}
     hasBin: true
     dependencies:
       '@rushstack/ts-command-line': 4.9.0
