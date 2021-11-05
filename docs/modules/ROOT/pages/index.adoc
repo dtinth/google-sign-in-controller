@@ -6,7 +6,7 @@ Sometimes you build yourself a web application. You have the frontend and the ba
 This library provides a simple way to protect your backend with Google Sign-In.
 
 * On the frontend, use this library to authenticate user and get an ID token. Send this ID token to the backend.
-* On the backend, verify the ID token’s integrity to authenticate yourself. See https://developers.google.com/identity/sign-in/web/backend-auth#verify-the-integrity-of-the-id-token[Verify the integrity of the ID token on Google Sign-In for Websites documentation]. Validate the `sub` claim to make sure it’s you.
+* On the backend, verify the ID token’s integrity to authenticate yourself. See https://developers.google.com/identity/sign-in/web/backend-auth#verify-the-integrity-of-the-id-token[Verify the integrity of the ID token on Google Sign-In for Websites documentation]. Validate the `sub` claim to make sure it’s you. https://github.com/dtinth/automatron/blob/master/webui/api/automatron.ts:[Here’s an example.]
 
 This library is a thin wrapper on top of Google Sign-In. It takes care of asynchronously loading the Google Platform Library and the Google Sign-In JavaScript API, and provides simple hooks to access the user ID token.
 
