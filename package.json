@@ -15,7 +15,8 @@
     "build": "heft build",
     "test": "heft test",
     "prepare": "heft build",
-    "api": "api-documenter yaml -i temp -o temp/api-yaml && api-documenter-yaml-to-antora-asciidoc asciidoc -i temp/api-yaml"
+    "api": "api-documenter yaml -i temp -o temp/api-yaml && api-documenter-yaml-to-antora-asciidoc asciidoc -i temp/api-yaml",
+    "semantic-release": "semantic-release"
   },
   "author": "Thai Pangsakulyanont <dtinth@spacet.me> (http://dt.in.th/)",
   "license": "MIT",
@@ -24,11 +25,25 @@
     "@rushstack/heft": "0.44.2",
     "@rushstack/heft-web-rig": "0.7.2",
     "@types/heft-jest": "1.0.2",
-    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-9"
+    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-9",
+    "semantic-release": "18.0.1"
   },
   "dependencies": {
     "@types/gapi": "^0.0.41",
     "@types/gapi.auth2": "^0.0.55",
     "p-memoize": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtinth/google-sign-in-controller.git"
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "preview",
+        "prerelease": true
+      }
+    ]
   }
 }
