@@ -1,0 +1,6 @@
+/dist/
+/etc/
+/lib/
+/lib-commonjs/
+pnpm-lock.yaml
+/temp/

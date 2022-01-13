@@ -26,6 +26,7 @@
     "@rushstack/heft-web-rig": "0.7.2",
     "@types/heft-jest": "1.0.2",
     "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-9",
+    "prettier": "2.5.1",
     "release-it": "14.12.1"
   },
   "dependencies": {

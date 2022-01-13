@@ -9,6 +9,7 @@ specifiers:
   '@types/heft-jest': 1.0.2
   api-documenter-yaml-to-antora-asciidoc: ^0.0.0-9
   p-memoize: ^5.0.0
+  prettier: 2.5.1
   release-it: 14.12.1
 
 dependencies:
@@ -22,6 +23,7 @@ devDependencies:
   '@rushstack/heft-web-rig': 0.7.2_@rushstack+heft@0.44.2
   '@types/heft-jest': 1.0.2
   api-documenter-yaml-to-antora-asciidoc: 0.0.0-9
+  prettier: 2.5.1
   release-it: 14.12.1
 
 packages:
@@ -6472,6 +6474,12 @@ packages:
 
   /prettier/2.3.2:
     resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
