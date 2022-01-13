@@ -19,15 +19,7 @@ jobs:
         with:
           node-version: 16
           cache: pnpm
-      - name: Install dependencies
+      - name: Install dependencies and build
         run: pnpm install --prefer-offline
-      - name: Build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm run build
       - name: Test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm run test
