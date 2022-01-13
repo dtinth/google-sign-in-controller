@@ -1,12 +1,9 @@
-name: Release
+name: CI
 on:
   push:
-    branches:
-      - main
-      - preview
 jobs:
-  release:
-    name: Release
+  ci:
+    name: CI
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -24,8 +21,13 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --prefer-offline
-      - name: Release
+      - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm run build
+      - name: Test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm run test

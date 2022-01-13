@@ -1,12 +1,7 @@
 {
-  "extends": "./node_modules/@rushstack/heft-web-rig/profiles/library/tsconfig-base.json",
+  "extends": "./tsconfig-base.json",
   "compilerOptions": {
     "skipLibCheck": true,
-    "types": [
-      "heft-jest",
-      "gapi",
-      "gapi.auth2",
-      "node"
-    ]
+    "types": ["heft-jest", "gapi", "gapi.auth2", "node"]
   }
 }
