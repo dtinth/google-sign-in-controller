@@ -38,8 +38,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dtinth/google-sign-in-controller.git"
-  },
-  "volta": {
-    "node": "16.13.2"
   }
 }

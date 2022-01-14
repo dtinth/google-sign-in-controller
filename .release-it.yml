@@ -1,8 +1,5 @@
 github:
   release: true
-hooks:
-  'before:init':
-    - pnpm run prepare
 plugins:
   news-fragments:
     fragmentsFolder: changes
