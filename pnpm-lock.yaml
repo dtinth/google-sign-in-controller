@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@microsoft/api-documenter': ^7.13.50
+  '@microsoft/api-documenter': 7.14.1
   '@rushstack/heft': 0.44.2
   '@rushstack/heft-web-rig': 0.7.2
   '@spacet.me/news-fragments': 1.15.2-1
   '@types/gapi': ^0.0.41
   '@types/gapi.auth2': ^0.0.55
   '@types/heft-jest': 1.0.2
-  api-documenter-yaml-to-antora-asciidoc: ^0.0.0-9
+  api-documenter-yaml-to-antora-asciidoc: 0.0.0-11
   p-memoize: ^5.0.0
   prettier: 2.5.1
   release-it: 15.0.0-esm.3
@@ -19,12 +19,12 @@ dependencies:
   p-memoize: 5.0.0
 
 devDependencies:
-  '@microsoft/api-documenter': 7.13.50
+  '@microsoft/api-documenter': 7.14.1
   '@rushstack/heft': 0.44.2
   '@rushstack/heft-web-rig': 0.7.2_@rushstack+heft@0.44.2
   '@spacet.me/news-fragments': 1.15.2-1
   '@types/heft-jest': 1.0.2
-  api-documenter-yaml-to-antora-asciidoc: 0.0.0-9
+  api-documenter-yaml-to-antora-asciidoc: 0.0.0-11
   prettier: 2.5.1
   release-it: 15.0.0-esm.3
 
@@ -640,25 +640,17 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@microsoft/api-documenter/7.13.50:
-    resolution: {integrity: sha512-u2VWomC4x1OFHNA+6VTKwfupD9ZOCR3V6ql7rieYmfVNMm+4V1UB1RSdzDDp1SQlTt13fwPUhO4yiAGRwmJdRA==}
+  /@microsoft/api-documenter/7.14.1:
+    resolution: {integrity: sha512-IFwS3TzVxFh9LSGJuYOWiZ5V+AdYfnLE+WC/VKpeHnSsiW1goLEO+qkoqonvirJr/jQTNuC7NScIjXS2pXODMQ==}
     hasBin: true
     dependencies:
-      '@microsoft/api-extractor-model': 7.13.7
+      '@microsoft/api-extractor-model': 7.15.3
       '@microsoft/tsdoc': 0.13.2
-      '@rushstack/node-core-library': 3.40.2
-      '@rushstack/ts-command-line': 4.9.0
+      '@rushstack/node-core-library': 3.45.0
+      '@rushstack/ts-command-line': 4.10.6
       colors: 1.2.5
       js-yaml: 3.13.1
       resolve: 1.17.0
-    dev: true
-
-  /@microsoft/api-extractor-model/7.13.7:
-    resolution: {integrity: sha512-emwhcaSF/h3WdqBWps4UU0RtGOGzy53IsplxuoLwtCuMAx3namYvJSfUGa5ajGPBao4MCyRYGsMc3EZ6IdR8cQ==}
-    dependencies:
-      '@microsoft/tsdoc': 0.13.2
-      '@microsoft/tsdoc-config': 0.15.2
-      '@rushstack/node-core-library': 3.40.2
     dev: true
 
   /@microsoft/api-extractor-model/7.15.3:
@@ -926,20 +918,6 @@ packages:
       true-case-path: 2.2.1
     dev: true
 
-  /@rushstack/node-core-library/3.40.2:
-    resolution: {integrity: sha512-wzcRucwnhOENTfx6hZ2M+CA1Zmp8Dr572mFFtjxmcQzBWTbNFRB1Mi1wLb7DLza+69OUBoSZcHUqydlwL+gvSA==}
-    dependencies:
-      '@types/node': 10.17.13
-      colors: 1.2.5
-      fs-extra: 7.0.1
-      import-lazy: 4.0.0
-      jju: 1.4.0
-      resolve: 1.17.0
-      semver: 7.3.5
-      timsort: 0.3.0
-      z-schema: 3.18.4
-    dev: true
-
   /@rushstack/node-core-library/3.45.0:
     resolution: {integrity: sha512-YMuIJl19vQT1+g/OU9mLY6T5ZBT9uDlmeXExDQACpGuxTJW+LHNbk/lRX+eCApQI2eLBlaL4U68r3kZlqwbdmw==}
     dependencies:
@@ -963,15 +941,6 @@ packages:
 
   /@rushstack/ts-command-line/4.10.6:
     resolution: {integrity: sha512-Y3GkUag39sTIlukDg9mUp8MCHrrlJ27POrBNRQGc/uF+VVgX8M7zMzHch5zP6O1QVquWgD7Engdpn2piPYaS/g==}
-    dependencies:
-      '@types/argparse': 1.0.38
-      argparse: 1.0.10
-      colors: 1.2.5
-      string-argv: 0.3.1
-    dev: true
-
-  /@rushstack/ts-command-line/4.9.0:
-    resolution: {integrity: sha512-kmT8t+JfnvphISF1C5WwY56RefjwgajhSjs9J4ckvAFXZDXR6F5cvF5/RTh7fGCzIomg8esy2PHO/b52zFoZvA==}
     dependencies:
       '@types/argparse': 1.0.38
       argparse: 1.0.10
@@ -1172,10 +1141,6 @@ packages:
 
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
-    dev: true
-
-  /@types/node/10.17.13:
-    resolution: {integrity: sha512-pMCcqU2zT4TjqYFrWtYHKal7Sl30Ims6ulZ4UFXxI4xbtQqK/qqKwkDoBFCfooRqqmRu9vY3xaJRwxSh673aYg==}
     dev: true
 
   /@types/node/12.20.24:
@@ -1549,11 +1514,11 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /api-documenter-yaml-to-antora-asciidoc/0.0.0-9:
-    resolution: {integrity: sha512-ISIg5srwAmmiBtZpjKBm7e3DQjIFV4VyyKBovpCqiQxQYn37H3/WzrzfPArmBjqm3RdKwDif9VcB2EEn0g08Lg==}
+  /api-documenter-yaml-to-antora-asciidoc/0.0.0-11:
+    resolution: {integrity: sha512-NMjDRr0VFGxqimTuu0A1jrWhCl5hC9uQ4uN2RNNqde7q+cEYtGamAUqrvYyvksA8kDAPF9mfX0O3vd467Vb7Yw==}
     hasBin: true
     dependencies:
-      '@rushstack/ts-command-line': 4.9.0
+      '@rushstack/ts-command-line': 4.10.6
       glob: 7.1.7
       js-yaml: 4.1.0
       make-promises-safe: 5.1.0
@@ -8637,11 +8602,6 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /validator/8.2.0:
-    resolution: {integrity: sha512-Yw5wW34fSv5spzTXNkokD6S6/Oq92d8q/t14TqsS3fAiA1RYnxSFSIZ+CY3n6PGGRCq5HhJTSepQvFUS2QUDxA==}
-    engines: {node: '>= 0.10'}
-    dev: true
-
   /vary/1.1.2:
     resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
     engines: {node: '>= 0.8'}
@@ -9046,17 +9006,6 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-    dev: true
-
-  /z-schema/3.18.4:
-    resolution: {integrity: sha512-DUOKC/IhbkdLKKiV89gw9DUauTV8U/8yJl1sjf6MtDmzevLKOF2duNJ495S3MFVjqZarr+qNGCPbkg4mu4PpLw==}
-    hasBin: true
-    dependencies:
-      lodash.get: 4.4.2
-      lodash.isequal: 4.5.0
-      validator: 8.2.0
-    optionalDependencies:
-      commander: 2.20.3
     dev: true
 
   /z-schema/5.0.2:

@@ -15,18 +15,19 @@
     "build": "heft build",
     "test": "heft test",
     "prepare": "heft build",
-    "api": "api-documenter yaml -i temp -o temp/api-yaml && api-documenter-yaml-to-antora-asciidoc asciidoc -i temp/api-yaml",
-    "release": "release-it"
+    "api": "./scripts/generate-api-docs",
+    "release": "release-it",
+    "format": "prettier --write ."
   },
   "author": "Thai Pangsakulyanont <dtinth@spacet.me> (http://dt.in.th/)",
   "license": "MIT",
   "devDependencies": {
-    "@microsoft/api-documenter": "^7.13.50",
+    "@microsoft/api-documenter": "7.14.1",
     "@rushstack/heft": "0.44.2",
     "@rushstack/heft-web-rig": "0.7.2",
     "@spacet.me/news-fragments": "1.15.2-1",
     "@types/heft-jest": "1.0.2",
-    "api-documenter-yaml-to-antora-asciidoc": "^0.0.0-9",
+    "api-documenter-yaml-to-antora-asciidoc": "0.0.0-11",
     "prettier": "2.5.1",
     "release-it": "15.0.0-esm.3"
   },
