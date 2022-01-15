@@ -14,7 +14,7 @@
   "scripts": {
     "build": "heft build",
     "test": "heft test",
-    "prepare": "heft build",
+    "prepare": "heft build && ./scripts/generate-api-docs",
     "api": "./scripts/generate-api-docs",
     "release": "release-it",
     "format": "prettier --write ."
@@ -39,5 +39,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dtinth/google-sign-in-controller.git"
-  }
+  },
+  "docModel": "./dist/google-sign-in-controller.api.json"
 }
