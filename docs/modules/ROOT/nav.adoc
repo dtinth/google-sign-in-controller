@@ -1,2 +1,3 @@
 * xref:index.adoc[]
 * xref:svelte.adoc[Client-side: Svelte]
+* https://apiref.page/package/@dtinth/google-sign-in-controller[API Reference]
