@@ -16,29 +16,30 @@
     "test": "heft test",
     "prepare": "heft build && ./scripts/generate-api-docs",
     "api": "./scripts/generate-api-docs",
-    "release": "release-it",
+    "release": "./scripts/release",
     "format": "prettier --write ."
   },
   "author": "Thai Pangsakulyanont <dtinth@spacet.me> (http://dt.in.th/)",
   "license": "MIT",
   "devDependencies": {
-    "@microsoft/api-documenter": "7.14.1",
+    "@changesets/cli": "2.20.0",
     "@rushstack/heft": "0.44.2",
-    "@rushstack/heft-web-rig": "0.7.2",
-    "@spacet.me/news-fragments": "1.15.2-1",
+    "@rushstack/heft-web-rig": "0.8.2",
     "@types/heft-jest": "1.0.2",
-    "api-documenter-yaml-to-antora-asciidoc": "0.0.0-11",
-    "prettier": "2.5.1",
-    "release-it": "15.0.0-esm.3"
+    "prettier": "2.5.1"
   },
   "dependencies": {
     "@types/gapi": "^0.0.41",
     "@types/gapi.auth2": "^0.0.55",
-    "p-memoize": "^5.0.0"
+    "p-memoize": "^5.0.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/dtinth/google-sign-in-controller.git"
   },
-  "docModel": "./dist/google-sign-in-controller.api.json"
+  "docModel": "./dist/google-sign-in-controller.api.json",
+  "homepage": "https://github.com/dtinth/google-sign-in-controller#readme",
+  "bugs": {
+    "url": "https://github.com/dtinth/google-sign-in-controller#issues"
+  }
 }
